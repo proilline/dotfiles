@@ -1,0 +1,37 @@
+{
+    "layer": "top",
+    "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
+    "modules-right": ["pulseaudio", "clock", "custom/power"],
+    "sway/window": {
+        "max-length": 30
+    },
+    "clock": {
+        "format": "{:%Y/%m/%d/%H:%M}"
+    },
+
+    "pulseaudio": {
+        "format": " {volume}%",
+	    "scroll-step": 1,
+    },
+
+    "custom/power": {
+    	"format" : "  ",
+	"on-click" : "doas poweroff",
+	"return-type" : "json"
+    },
+    "sway/workspaces" : {
+    	"format": "{icon}",
+	"format-icons": {
+	   "1": "α",
+	   "2": "β",
+	   "3": "γ",
+	   "4": "δ",
+   	   "5": "ε",
+	   "6": "ζ",
+	   "7": "η",
+	   "8": "θ",
+	   "9": "ι",
+	   "10": "κ"
+	}
+    }
+}
